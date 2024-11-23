@@ -35,7 +35,10 @@ export const ProfileUI: FC<ProfileUIProps> = ({
             errorText={''}
             size={'default'}
             icon={'EditIcon'}
+<<<<<<< HEAD
             data-cy='profile-name'
+=======
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
           />
         </div>
         <div className='pb-6'>
@@ -49,7 +52,10 @@ export const ProfileUI: FC<ProfileUIProps> = ({
             errorText={''}
             size={'default'}
             icon={'EditIcon'}
+<<<<<<< HEAD
             data-cy='profile-email'
+=======
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
           />
         </div>
         <div className='pb-6'>
@@ -63,7 +69,10 @@ export const ProfileUI: FC<ProfileUIProps> = ({
             errorText={''}
             size={'default'}
             icon={'EditIcon'}
+<<<<<<< HEAD
             data-cy='profile-password'
+=======
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
           />
         </div>
         {isFormChanged && (

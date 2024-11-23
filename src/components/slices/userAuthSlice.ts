@@ -64,14 +64,22 @@ export const registerUser = createAsyncThunk(
   }
 );
 
+<<<<<<< HEAD
 export interface IUserAuth {
+=======
+interface IUserAuth {
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   userData: TUser | null;
   isAuthChecked: boolean;
   isLoading: boolean;
   error: string | null;
 }
 
+<<<<<<< HEAD
 export const initialState: IUserAuth = {
+=======
+const initialState: IUserAuth = {
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   userData: null,
   isAuthChecked: false,
   isLoading: false,

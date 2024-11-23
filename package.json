@@ -34,7 +34,10 @@
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
+<<<<<<< HEAD
     "@jest/globals": "^29.7.0",
+=======
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
     "@storybook/addon-essentials": "^7.6.10",
     "@storybook/addon-interactions": "^7.6.10",
     "@storybook/addon-links": "^7.6.10",
@@ -56,7 +59,11 @@
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
+<<<<<<< HEAD
     "cypress": "^13.16.0",
+=======
+    "cypress": "^13.6.1",
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
     "dotenv-webpack": "^8.0.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -82,7 +89,11 @@
     "storybook": "^7.6.10",
     "storybook-addon-react-router-v6": "^2.0.10",
     "style-loader": "^3.3.3",
+<<<<<<< HEAD
     "ts-jest": "^29.2.5",
+=======
+    "ts-jest": "^29.1.1",
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "url-loader": "^4.1.1"
@@ -93,9 +104,13 @@
     "build-storybook": "storybook build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "npm run lint -- --fix",
+<<<<<<< HEAD
     "format": "prettier ./src --write",
     "test": "jest",
     "cypress:open": "cypress open"
+=======
+    "format": "prettier ./src --write"
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   },
   "eslintConfig": {
     "extends": [
