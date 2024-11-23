@@ -3,6 +3,7 @@ import { TIngredient, TOrder, TOrdersData, TUser } from './types';
 
 const URL = process.env.BURGER_API_URL;
 
+<<<<<<< HEAD
 export const checkResponse = <T>(res: Response): Promise<T> =>
   res.ok ? res.json() : res.json().then((err) => Promise.reject(err));
 
@@ -11,6 +12,16 @@ export type TServerResponse<T> = {
 } & T;
 
 export type TRefreshResponse = TServerResponse<{
+=======
+const checkResponse = <T>(res: Response): Promise<T> =>
+  res.ok ? res.json() : res.json().then((err) => Promise.reject(err));
+
+type TServerResponse<T> = {
+  success: boolean;
+} & T;
+
+type TRefreshResponse = TServerResponse<{
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   refreshToken: string;
   accessToken: string;
 }>;
@@ -57,17 +68,29 @@ export const fetchWithRefresh = async <T>(
   }
 };
 
+<<<<<<< HEAD
 export type TIngredientsResponse = TServerResponse<{
   data: TIngredient[];
 }>;
 
 export type TFeedsResponse = TServerResponse<{
+=======
+type TIngredientsResponse = TServerResponse<{
+  data: TIngredient[];
+}>;
+
+type TFeedsResponse = TServerResponse<{
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   orders: TOrder[];
   total: number;
   totalToday: number;
 }>;
 
+<<<<<<< HEAD
 export type TOrdersResponse = TServerResponse<{
+=======
+type TOrdersResponse = TServerResponse<{
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   data: TOrder[];
 }>;
 
@@ -99,7 +122,11 @@ export const getOrdersApi = () =>
     return Promise.reject(data);
   });
 
+<<<<<<< HEAD
 export type TNewOrderResponse = TServerResponse<{
+=======
+type TNewOrderResponse = TServerResponse<{
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   order: TOrder;
   name: string;
 }>;
@@ -119,7 +146,11 @@ export const orderBurgerApi = (data: string[]) =>
     return Promise.reject(data);
   });
 
+<<<<<<< HEAD
 export type TOrderResponse = TServerResponse<{
+=======
+type TOrderResponse = TServerResponse<{
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   orders: TOrder[];
 }>;
 
@@ -137,7 +168,11 @@ export type TRegisterData = {
   password: string;
 };
 
+<<<<<<< HEAD
 export type TAuthResponse = TServerResponse<{
+=======
+type TAuthResponse = TServerResponse<{
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   refreshToken: string;
   accessToken: string;
   user: TUser;
@@ -204,7 +239,11 @@ export const resetPasswordApi = (data: { password: string; token: string }) =>
       return Promise.reject(data);
     });
 
+<<<<<<< HEAD
 export type TUserResponse = TServerResponse<{ user: TUser }>;
+=======
+type TUserResponse = TServerResponse<{ user: TUser }>;
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
 
 export const getUserApi = () =>
   fetchWithRefresh<TUserResponse>(`${URL}/auth/user`, {

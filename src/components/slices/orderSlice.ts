@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   orderBurgerApi,
   getOrderByNumberApi,
@@ -7,6 +8,13 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
 
 export type TOrderSlice = {
+=======
+import { orderBurgerApi, getOrderByNumberApi, getOrdersApi } from '@api';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { TOrder } from '@utils-types';
+
+type TOrderSlice = {
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   orderData: TOrder | null;
   orders: TOrder[];
   orderRequest: boolean;
@@ -15,7 +23,11 @@ export type TOrderSlice = {
   isLoading: boolean;
 };
 
+<<<<<<< HEAD
 export const initialState: TOrderSlice = {
+=======
+const initialState: TOrderSlice = {
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   orderData: null,
   orders: [],
   orderRequest: false,
@@ -63,7 +75,11 @@ export const orderSlice = createSlice({
       })
       .addCase(postOrderBurger.pending, (state) => {
         state.orderRequest = true;
+<<<<<<< HEAD
         //state.isLoading = true;
+=======
+        state.isLoading = true;
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
       })
       .addCase(postOrderBurger.fulfilled, (state, action) => {
         state.orderData = action.payload.order;
@@ -71,17 +87,29 @@ export const orderSlice = createSlice({
         state.orderRequest = false;
       })
       .addCase(fetchOrderByNumber.rejected, (state) => {
+<<<<<<< HEAD
         //state.orderRequest = false;
+=======
+        state.orderRequest = false;
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
         state.isLoading = false;
         state.orderById = 'Ошибка при загрузке заказа';
       })
       .addCase(fetchOrderByNumber.pending, (state) => {
+<<<<<<< HEAD
         //state.orderRequest = true;
+=======
+        state.orderRequest = true;
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
         state.isLoading = true;
       })
       .addCase(fetchOrderByNumber.fulfilled, (state, action) => {
         state.isLoading = false;
+<<<<<<< HEAD
         //state.orderRequest = true;
+=======
+        state.orderRequest = true;
+>>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
         state.orderData = action.payload.orders[0];
       })
       .addCase(getPlacedOrders.rejected, (state, action) => {
