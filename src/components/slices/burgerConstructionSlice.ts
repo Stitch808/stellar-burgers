@@ -1,20 +1,12 @@
 import { createSlice, nanoid, PayloadAction } from '@reduxjs/toolkit';
 import { TConstructorIngredient, TIngredient } from '../../utils/types';
 
-<<<<<<< HEAD
 export interface IBurgerConstructor {
-=======
-interface IBurgerConstructor {
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   ingredients: TConstructorIngredient[];
   bun: TConstructorIngredient | TIngredient | null;
 }
 
-<<<<<<< HEAD
 export const initialState: IBurgerConstructor = {
-=======
-const initialState: IBurgerConstructor = {
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   ingredients: [],
   bun: null
 };
