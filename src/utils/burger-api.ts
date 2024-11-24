@@ -100,7 +100,6 @@ export const getOrdersApi = () =>
   });
 
 export type TNewOrderResponse = TServerResponse<{
-
   order: TOrder;
   name: string;
 }>;
@@ -121,7 +120,6 @@ export const orderBurgerApi = (data: string[]) =>
   });
 
 export type TOrderResponse = TServerResponse<{
-
   orders: TOrder[];
 }>;
 
@@ -140,7 +138,6 @@ export type TRegisterData = {
 };
 
 export type TAuthResponse = TServerResponse<{
-
   refreshToken: string;
   accessToken: string;
   user: TUser;
