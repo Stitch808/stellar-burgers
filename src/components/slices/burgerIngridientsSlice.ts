@@ -1,14 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { TIngredient } from '@utils-types';
-<<<<<<< HEAD
 import { getIngredientsApi } from '../../utils/burger-api';
 
 export interface IBurgerIngredients {
-=======
-import { getIngredientsApi } from '@api';
-
-interface IBurgerIngredients {
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   ingredients: TIngredient[];
   isLoading: boolean;
   error: string | null;

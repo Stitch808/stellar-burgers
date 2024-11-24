@@ -1,21 +1,13 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
-<<<<<<< HEAD
 import { getFeedsApi } from '../../utils/burger-api';
-=======
-import { getFeedsApi } from '@api';
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
 
 export const getFeeds = createAsyncThunk('orders/get', async () => {
   const getFeed = getFeedsApi();
   return getFeed;
 });
 
-<<<<<<< HEAD
 export type TFeedSlice = {
-=======
-type TFeedSlice = {
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   orders: TOrder[];
   isLoading: boolean;
   error: string | null;
@@ -25,11 +17,7 @@ type TFeedSlice = {
   };
 };
 
-<<<<<<< HEAD
 export const initialState: TFeedSlice = {
-=======
-const initialState: TFeedSlice = {
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
   orders: [],
   isLoading: false,
   error: null,
@@ -55,11 +43,7 @@ export const feedSlice = createSlice({
       })
       .addCase(getFeeds.rejected, (state, action) => {
         state.isLoading = false;
-<<<<<<< HEAD
         state.error = 'Ошибка загрузки';
-=======
-        state.error = action.error.message as string;
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
       })
       .addCase(getFeeds.fulfilled, (state, action) => {
         state.isLoading = false;

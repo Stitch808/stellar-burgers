@@ -18,11 +18,8 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
   onOrderClick,
   closeOrderModal
 }) => (
-<<<<<<< HEAD
   <section className={styles.burger_constructor} data-cy='burger-constructor'>
-=======
-  <section className={styles.burger_constructor}>
->>>>>>> 1f534b5f7b255a7d9f8dc23735cd38d4d440987c
+
     {constructorItems.bun ? (
       <div className={`${styles.element} mb-4 mr-4`}>
         <ConstructorElement
