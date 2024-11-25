@@ -73,7 +73,7 @@ describe('Общий тест конструктора и модальных о�
     it('Проверка авторизации перед тестами', function () {
       cy.visit('/profile');
       cy.get(PROFILE_NAME).should('have.value', 'Sergey');
-      cy.get(PROFILE_EMAIL).should('have.value', 'Stitch808@yandex.ru"');
+      cy.get(PROFILE_EMAIL).should('have.value', 'Stitch808@yandex.ru');
     });
     it('Тест процесса добавление ингридиентов для заказа и его оформления', function () {
       //добавление в заказ булки
